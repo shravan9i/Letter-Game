@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f0f8ff;
+    color: #333;
+}
+
+.game-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+#targetLetter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+#letterGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.letter:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#restart, #downloadCSV {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart:hover, #downloadCSV:hover {
+    background: #218838;
+}

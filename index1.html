@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Letter Matching Game</h1>
+        <p>Find and click the letter: <span id="targetLetter"></span></p>
+        <div id="letterGrid"></div>
+        <p>Round: <span id="roundNumber">1</span></p>
+        <button id="restart">Restart</button>
+        
+        <div id="gameSummary" class="hidden">
+            <h2>Game Summary</h2>
+            <pre id="summaryData"></pre>
+            <button id="downloadCSV">Download CSV</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
